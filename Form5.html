@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@300&family=Lora:wght@500&family=Nunito:wght@200&family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'inter';
+            height: 100%;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            background: white;
+            padding: 60px;
+            width: 550px;
+            max-width: calc(100% - 60px);
+            border-radius: 5px;
+        }
+        .form-element{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        .form-element span{
+            margin-bottom: 10px;
+        }
+        input, textarea{
+            border: 1px solid #d0d2e2;
+            line-height: 2;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        form button{
+            width: 100%;
+            padding: 20px;
+            color: white;
+            background: #1aaaef;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://script.google.com/macros/s/AKfycbzit9kz5sQi9YFl8FY_ho1toq-EAXuF0_L2Id2Yg3zeW4gX58yGschkh-WlNfxWWeAWPw/exec" method="post">
+        <h2>Send us a message</h2>
+        
+        <div class="form-element">
+            <span>First Name <font color="red">*</font></span>
+            <input type="text" class="form-control" placeholder="Your answer" name="First Name" id="First Name"><br><br>
+        </div>
+
+        <div class="form-element">
+            <span>Last Name <font color="red">*</font></span>
+            <input type="text" class="form-control" placeholder="Your answer" name="Last Name" id="lName"><br><br>
+        </div>
+
+        <div class="form-element">
+            <span>Phone Number (WhatsApp preferred) <font color="red">*</font></span>
+            <input type="number" class="form-control" placeholder="Your answer" name="Phone Number" id="Mobile"><br><br>
+        </div>
+
+        <div class="form-element">
+            <span>Email <font color="red">*</font></span>
+            <input type="email" class="form-control" placeholder="Your answer" name="Email" id="Email"><br><br>
+        </div>
+
+        <div class="form-element">
+            <span>University, College(eg:NMIMS,MPSTME) <font color="red">*</font></span>
+            <input type="text" class="form-control" placeholder="Your answer" name="University College" id="University College"><br><br>
+        </div>
+
+        <div class="form-element">
+            <span>Year of Study<font color="red">*</font></span>
+            <Select name="DropDown">
+                <option value="Choose">Choose</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+                <option value="5th Year">5th Year</option>
+                <option value="6th Year">6th Year</option>
+        </select>
+        </div>
+
+        <div class="form-element radio-button">
+            <span>Branch<font color="red">*</font></span>
+            <label>
+            <Input type="radio" name="Branch" value="Mechanical engineering"/>Mechanical Engineering<br>
+		    <Input type="radio" name="Branch" value="Computer Engineering"/>Computer Engineering<br>
+            <Input type="radio" name="Branch" value="Electronics and Telecommunications"/>Electronics and Telecommunications<br>
+            <Input type="radio" name="Data Science" value="Data Science"/>Data Science<br>
+            <Input type="radio" name="Branch" value="Civil Engineering"/>Civil Engineering<br>
+            <Input type="radio" name="Branch" value="Information Technology"/>Information Technology<br>
+            <Input type="radio" name="Branch" value="Other"/>Other
+            </label>
+        </div>
+        <div class="form-element">
+            <span>Location Preference For Internship<br>(Training will be Virtual)<font color="red">*</font></span>
+            <label>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Anywhere in India"/>Anywhere in India<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Remote"/>Remote<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Mumbai"/>Mumbai<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Hyderbad"/>Hyderbad<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Pune"/>Pune<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Banglore"/>Banglore<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Delhi NCR"/>Delhi NCR<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Indore"/>Indore<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Kolkata"/>Kolkata<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Chandigarh"/>Chandigarh<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Chennai"/>Chennai<br>
+                <Input type="checkbox" name="Location Preference For Internship (Training will be Virtual)" value="Other"/>Other:<br>
+            </label>
+            </div>
+           
+            <div class="form-element radio-button">
+                <span>Training Domain Selection<font color="red">*</font></span>
+                <label>
+                <Input type="radio" name="Training Domain Selection" value="Data Science (Python, Object Detection, Data Modeling"/>Data Science (Python, Object <br> &emsp;Detection, Data Modeling)<br>
+                <Input type="radio" name="Training Domain Selection" value="Full Stack Web Development (MERN)"/>Full Stack Web Developmentbr<br>&emsp; (MERN)<br>
+                <Input type="radio" name="Training Domain Selection" value="Data Science"/>Bussiness Analytics (Advanced <br>&emsp;Excel, SQL, PowerBi Tableau)<br>
+                </label>
+            </div>
+        
+            <div class="form-element radio-button">
+                <span>In the above domain, what's your proficiency level?<font color="red">*</font></span>
+                <label>
+                <Input type="radio" name="In the above domain, what's your proficiency level?" value="1. Curious & want to explore"/>1. Curious & want to explore<br>
+                <Input type="radio" name="In the above domain, what's your proficiency level?" value="2. Have Theoretical Knowledge"/>2. Have Theoretical Knowledge<br>
+                <Input type="radio" name="In the above domain, what's your proficiency level?" value="3. Have worked on 1-2 projec"/>3. Have worked on 1-2 project<br>
+                <Input type="radio" name="In the above domain, what's your proficiency level?" value="4. Have worked on 5-6 project"/>4. Have worked on 5-6 project<br>
+                <Input type="radio" name="In the above domain, what's your proficiency level?" value="5. Have 2+ years of industry experience"/>5. Have 2+ years of industry experience<br>
+
+                </label>
+            </div>
+            <div class="form-element">
+                <span>Tell us about Your current skill-sets and project experience</span>
+                <input type="text" class="form-control" placeholder="Your answer" name="Experience" id="experience"><br>
+            </div>
+            <div class="form-element radio-button">
+                <span>When can you start training? <br>(Commitment: 2-3 hrs per day, self paced)<font color="red">*</font></span>
+                <label>
+                <Input type="radio" name="When can you start training? (Commitment: 2-3 hrs per day, self paced)" value="Immediately"/>Immediately<br>
+                <Input type="radio" name="When can you start training? (Commitment: 2-3 hrs per day, self paced)" value="After One Week"/>After One Week<br>
+                <Input type="radio" name="When can you start training? (Commitment: 2-3 hrs per day, self paced)" value="After Two Week"/>After Two Week<br>
+                </label>
+            </div>
+            <div class="form-element">
+                <span>Please check the boxes to agree<font color="red">*</font></span>
+                <label>
+                    <Input type="checkbox" name="Please check the boxes to agree" value="Omniversity has all right to share my information with their parthers and clients"/>Omniversity has all right to share<br>&emsp; my information with their parthers <br>&emsp;and clients<br>
+                    <Input type="checkbox" name="Please check the boxes to agree" value="I have a computer/laptop & stable internet connection"/>I have a computer/laptop & stable <br>&emsp; internet connection<br>
+                    <Input type="checkbox" name="Please check the boxes to agree" value="I am dedicated and will train form at least 2 hourser a day"/>I am dedicated and will train form at <br>&emsp; least 2 hourser a day<br>
+
+                </label>
+                </div>    
+        
+            <button type="submit" value="send message" class="button btn-primary" id="submit">Submit</button> 
+            
+        
+            </div>
+        </div>
+    </body>
+    </html>
+
+
+        
